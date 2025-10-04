@@ -1,0 +1,28 @@
+.bienvenidos, .conocer, .novedades, .cta {
+padding: 20px;
+}
+.bienvenidos { background-color: $verde-suave; }
+.conocer { background-color: lighten($verde-suave, 20%); }
+.novedades { text-align: center; background-color: lighten($verde-suave, 30%); }
+.cta {
+background: linear-gradient(135deg, $verde-oscuro, $verde-claro);
+color: $blanco;
+text-align: center;
+padding: 40px 20px;
+margin: 40px auto;
+border-radius: 10px;
+h2 { color: lighten($verde-claro, 20%); margin-bottom: 15px; }
+a {
+    display: inline-block;
+    background: $verde-claro;
+    color: $blanco;
+    padding: 12px 28px;
+    border-radius: $radius-redondo;
+    font-weight: bold;
+    @include transition(all $transition-speed);
+    &:hover {
+    background: darken($verde-claro, 10%);
+    transform: scale(1.05);
+    }
+}
+}

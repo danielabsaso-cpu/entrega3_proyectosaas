@@ -1,0 +1,20 @@
+.hero {
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+gap: 40px;
+padding: 60px 10%;
+background-color: lighten($verde-suave, 10%);
+.hero-texto {
+    h2 { color: $verde-oscuro; font-size: 2rem; margin-bottom: 15px; }
+    p { font-size: 1.2rem; font-weight: 500; color: darken($verde-oscuro, 10%); }
+}
+.hero-img {
+    @include flex-center;
+    img {
+    max-width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+}
+}

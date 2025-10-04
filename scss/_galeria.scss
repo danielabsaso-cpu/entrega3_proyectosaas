@@ -1,0 +1,23 @@
+.mini-galeria, .grid-galeria {
+display: grid;
+gap: 15px;
+img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: $radius-base;
+    @include transition(transform $transition-speed, box-shadow $transition-speed);
+    &:hover { transform: scale(1.05); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+}
+}
+.mini-galeria .galeria-thumbs { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.grid-galeria { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.grid-galeria figure {
+background: $blanco;
+border-radius: 12px;
+overflow: hidden;
+text-align: center;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+transition: transform $transition-speed, box-shadow $transition-speed;
+&:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+figcaption { padding: 10px; font-weight: bold; color: $verde-oscuro; font-size: 1rem; }
+}

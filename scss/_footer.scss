@@ -1,0 +1,16 @@
+footer {
+    background-color: $verde-oscuro;
+    color: $blanco;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+a { 
+    color: lighten($verde-claro, 20%); 
+    @include transition; 
+    &:hover { color: $verde-claro; } 
+}
+.redes {
+    margin-top: 10px;
+    a { font-size: 24px; margin: 0 10px; display: inline-block; @include transition; &:hover { color: $verde-claro; transform: scale(1.1); } }
+}
+}
